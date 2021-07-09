@@ -4,8 +4,8 @@ import axios from 'axios'
 import ReactStars from 'react-rating-stars-component'
 
 
-const Products = () => {
-    
+const Products = () => { 
+
     const [items, setItems] = useState([ ])
 
     const loadData = () => {
@@ -14,10 +14,8 @@ const Products = () => {
             const arrayOfSix = response.slice(0,6)
             console.log(arrayOfSix)
             setItems(arrayOfSix)
-
         })
     };
-
 
     useEffect(() => {
         loadData()
@@ -50,9 +48,6 @@ const Products = () => {
             </Grid>
         </Section>
 
-
-
     )
 }
-
 export default Products
